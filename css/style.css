@@ -1,0 +1,566 @@
+/* 
+  =============
+  Global styles
+  =============
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* 
+  =============
+  header styles
+  =============
+*/
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  padding: 1.2em 0;
+}
+
+header .nav-icon-search-1,
+.nav-icon-bars {
+  display: none;
+}
+
+header .nav-logo {
+  width: 10%;
+  padding-right: 1em;
+}
+
+nav .nav-options-1 {
+  flex: 1;
+}
+
+.nav-options-2 li {
+  padding-right: 2em;
+}
+
+nav li {
+  padding: 0 0.5em;
+}
+
+nav .nav-icon {
+  font-size: 0.9rem;
+  padding: 0 0.2em;
+}
+
+nav li:hover {
+  text-decoration: 2px underline #706d6e;
+}
+
+/* 
+  =================
+  showcase-1 styles
+  =================
+*/
+
+.showcase-1 .discount {
+  background: #0067b8;
+}
+
+.showcase-1 .discount a {
+  color: #fff;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+}
+
+.showcase-1 .discount a:hover {
+  text-decoration: underline;
+}
+
+.showcase-1 img {
+  width: 50%;
+  margin: 2em 0;
+}
+
+.showcase-container-subtitle {
+  display: inline-block;
+  background: #fef000;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+.showcase-container-1 {
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase-container-1 h3,
+.showcase-container-2 h3,
+.wnba-content h3 {
+  font-size: 1.2rem;
+}
+
+.showcase-container-1 p,
+.showcase-container-2 p,
+.wnba-content p {
+  font-size: 0.8rem;
+  width: 70%;
+  padding: 1em 0;
+}
+
+.showcase-container-1 a,
+.showcase-container-2 a,
+.covid a {
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.showcase-btn-1 {
+  background: #000;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-right: 3em;
+}
+
+/* 
+  ===========
+  menu styles
+  ===========
+*/
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem 0 1rem 0;
+  /* padding-top: 2rem; */
+  margin: 0 auto;
+  width: 95%;
+}
+
+.menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-item i {
+  font-size: 2rem;
+}
+
+.menu-item a {
+  font-weight: bolder;
+  font-size: 0.7rem;
+  padding: 0.8em 0;
+  max-width: 85%;
+}
+
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  ===============
+  articles styles
+  ===============
+*/
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article img {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.article h3 {
+  font-size: 0.9rem;
+}
+
+.article p {
+  font-size: 0.7rem;
+  padding: 0.3em 0;
+}
+
+.article a {
+  color: #0067b8;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  padding: 0.3rem 0;
+}
+
+.article a:hover {
+  text-decoration: underline 2px;
+}
+
+/* 
+  =================
+  showcase 2 styles
+  =================
+*/
+
+.showcase-container-2 {
+  margin: 1.2rem 0;
+  padding: 1.5rem;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.showcase-container-2 img {
+  width: 45%;
+}
+
+.showcase-content-2 {
+  padding: 0 0 0 4rem;
+}
+
+.showcase-btn-2 {
+  display: block;
+  padding: 1rem 0;
+}
+
+.showcase-container-2 a:hover {
+  text-decoration: underline 2px;
+}
+
+/* 
+  =============
+  covid section styles
+  =============
+*/
+
+.covid {
+  padding: 1em;
+  margin: 1em 0;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.covid p {
+  font-size: 0.7rem;
+  padding: 0.4em 0;
+}
+
+/* 
+  =============
+  Wnba section styles
+  =============
+*/
+
+.wnba-container {
+  background: #ebf257;
+  display: flex;
+}
+
+.wnba-container img {
+  width: 50%;
+  padding: 1rem;
+}
+
+.wnba-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+}
+.wnba-content a {
+  width: 32%;
+  font-size: 0.7rem;
+  background: #000;
+  color: #fff;
+  font-weight: bolder;
+  padding: 1em 1.5em;
+  margin-bottom: 1.2rem;
+}
+
+/* 
+  ==============
+  social section
+  ==============
+*/
+.social-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 0.8rem;
+}
+
+.social-container img {
+  padding: 0 0.3rem;
+  width: 2rem;
+}
+
+/* links section */
+.links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background: #f2f2f2;
+  padding: 1.5rem 3rem;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.links h3 {
+  font-size: 0.7rem;
+}
+
+.links a {
+  font-size: 0.5rem;
+  font-weight: lighter;
+}
+
+/* footer */
+footer {
+  background: #f2f2f2;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a,
+footer p {
+  display: inline-block;
+  font-size: 0.5rem;
+  font-weight: lighter;
+  padding: 0 0.3rem;
+}
+
+/* 
+  =============
+  media queries
+  =============
+*/
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  header .nav-icon-search-1,
+  header .nav-icon-bars {
+    display: inline-block;
+  }
+
+  header .nav-icon-search-2 {
+    display: none;
+  }
+
+  header nav {
+    padding: 1.2em;
+  }
+
+  header i {
+    margin: 0 0.4em;
+  }
+
+  nav img {
+    margin: 0 auto;
+    min-width: 10em;
+  }
+
+  .nav-options-1,
+  .nav-options-2 li {
+    display: none;
+  }
+
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .menu a {
+    width: 70%;
+    padding-bottom: 3em;
+  }
+
+  /* article section */
+  .articles-container {
+    margin: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+
+  /* showcase section */
+
+  .showcase-container-1 img {
+    width: 80%;
+  }
+
+  .showcase-container-2 img {
+    width: 70%;
+  }
+
+  .showcase-container-1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .showcase-content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showcase-container-2 {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+
+  .showcase-container-1 a {
+    margin: 1em 0;
+  }
+
+  header .nav-icon-search-1,
+  header .nav-icon-bars {
+    display: inline-block;
+  }
+
+  header .nav-icon-search-2 {
+    display: none;
+  }
+
+  header nav {
+    padding: 1.2em;
+  }
+
+  header i {
+    margin: 0 0.4em;
+  }
+
+  nav img {
+    margin: 0 auto;
+    min-width: 10em;
+  }
+
+  .nav-options-1,
+  .nav-options-2 li {
+    display: none;
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu a {
+    width: 70%;
+    padding-bottom: 2em;
+  }
+
+  /* article section */
+  .articles-container {
+    margin: 0 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  /* wnba section */
+
+  .wnba-container img {
+    width: 100%;
+  }
+
+  .wnba-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wnba-content {
+    text-align: center;
+  }
+
+  .wnba-content p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .wnba-container a {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1.2rem;
+  }
+
+  /* covid */
+  .covid h1 {
+    font-size: 1rem;
+  }
+
+  /* social section */
+  .social-container {
+    padding: 1rem;
+  }
+
+  /* links */
+  .links {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 1em 1em;
+  }
+
+  /* footer */
+  footer {
+    flex-direction: column;
+    padding: 0 1em;
+  }
+}
